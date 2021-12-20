@@ -20,7 +20,7 @@ export default function Home({ posts }) {
 
       <div className="posts">
         {posts.map(({ title, uri }) => (
-          <div key={uri}>
+          <div key={uri} className="box">
             <a>{title}</a>
           </div>
         ))}
